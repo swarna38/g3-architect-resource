@@ -1,0 +1,53 @@
+@media screen and (max-width: 576px){
+    .navbar,
+     .nav-link,
+     .features,
+     .teams{
+        flex-direction: column;
+    }
+    .team-img-container,
+    .fact-container,
+    .sponsor-company{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 24px;
+    }
+    .fact-container{
+        justify-items: center;
+        gap:24px
+    }
+    .fact-title{
+        margin-top: 250px;
+    }
+    .sponsor-company{
+       justify-items: center; 
+       gap:50px
+    }
+    #experiance-badge{
+        margin:20px 0 0px 20px;
+    }
+}
+/* -----medium size device==== */
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .teams, .features{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 50px auto;
+    }
+    .sponsor-company, .fact-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap:50px ;
+        justify-items: center;
+    }
+    #experiance-badge{
+        margin:20px 0 0px 20px;
+    }
+    .fact-title{
+        margin-top: 250px;
+    }
+    .features-content{
+        max-width: 100%;
+    }
+}
